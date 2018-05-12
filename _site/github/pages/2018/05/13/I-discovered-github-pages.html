@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>I discovered Github pages</title>
+  <meta name="description" content="ThankGod I found it earlyWhy ThankGod  :pray: ? , well I was thinking to host my personal website and for that it required for me topick a server, virtual ho...">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/blog/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/github/pages/2018/05/13/I-discovered-github-pages.html">
+  <link rel="alternate" type="application/rss+xml" title="Blog" href="http://localhost:4000/blog/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/blog/">Blog</a>
+
+    <nav class="site-nav">
+        
+          
+          <a class="page-link" href="/blog/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">I discovered Github pages</h1>
+    <p class="post-meta">May 13, 2018</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="thankgod-i-found-it-early">ThankGod I found it early</h2>
+<p>Why ThankGod  :pray: ? , well I was thinking to host my personal website and for that it required for me to
+pick a server, virtual host and backend program. I would have cost me atleast 3 days of work and also
+some money for host &amp; domain  :disappointed: . But I was found this Github Pages and this is awesome :heart_eyes:</p>
+
+<h2 id="advantages">Advantages</h2>
+
+<ul>
+  <li>Fast and free website</li>
+  <li>Jekyll static webserver
+    <ul>
+      <li>easy blogging</li>
+      <li>tons of jekyll templates just one fork away</li>
+    </ul>
+  </li>
+  <li>Platform to host documentation of all your project</li>
+  <li>Show off your Resume on internet</li>
+</ul>
+
+<h2 id="installing-jekyll">Installing Jekyll</h2>
+<p>Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.</p>
+
+<p>Tested with Jekyll 2.5.2 on Ubuntu 14.04 and 14.10</p>
+<h3 id="install-prerequisites">Install Prerequisites</h3>
+
+<p>Install ruby, the ruby development libraries, and the make command.
+<code class="highlighter-rouge">sudo apt-get install ruby ruby-dev make gcc nodejs</code></p>
+
+<h3 id="javascript-workaround">Javascript Workaround</h3>
+
+<p>Installation of nodejs is required because of an issue where Jekyll requires a JavaScript runtime even if it will not be used.
+Install Jekyll</p>
+
+<p>Install the Jekyll gem system wide. For speed, we are excluding the extended documentation. To include all documentation, omit the –no-rdoc –no-ri switches.</p>
+
+<p><code class="highlighter-rouge">sudo gem install jekyll --no-rdoc --no-ri</code></p>
+
+<h3 id="start-jekyll">Start Jekyll</h3>
+<blockquote>
+  <p>Check that Jekyll has been successfully installed.
+<code class="highlighter-rouge">jekyll -v</code>
+The current version is jekyll 2.5.2.</p>
+</blockquote>
+
+<h3 id="recommended">Recommended</h3>
+
+<p>Additional gems can add features to Jekyll, such the github-pages gem which bundles together several gems supported by Github Pages.</p>
+
+<p><code class="highlighter-rouge">sudo gem install github-pages --no-rdoc --no-ri</code></p>
+
+<p>Although not required, git is often used to manage the files of a Jekyll website.</p>
+
+<p><code class="highlighter-rouge">sudo apt-get install git</code></p>
+
+<h3 id="get-website-content">Get Website Content</h3>
+
+<p>Now that Jekyll is installed, we need content for it to serve. We can either use a current website, or set up a new site from scratch.
+Use Existing Site</p>
+
+<p>Use git to clone an existing Jekyll website, such as this one!</p>
+
+<p><code class="highlighter-rouge">git clone https://github.com/mchelen/michaelchelen.net.git
+cd michaelchelen.net</code></p>
+
+<p>Please note: the –config option must be specified to run michaelchelen.net locally. See Extra Options section below.</p>
+<h3 id="create-new-site">Create New Site</h3>
+
+<p>For a new Jekyll site, use the new command to create a directory structure and config files.</p>
+
+<p><code class="highlighter-rouge">jekyll new my-awesome-site
+cd my-awesome-site</code></p>
+
+<h3 id="start-jekyll-1">Start Jekyll</h3>
+
+<p>Now that the basic config and layout are available, start Jekyll to generate the website HTML and start a local server.</p>
+
+<p><code class="highlighter-rouge">jekyll serve</code></p>
+
+<p>Then visit http://localhost:4000 in a web browser.</p>
+<blockquote>
+  <p>Jekyll is now successfully runnning!</p>
+</blockquote>
+
+<h2 id="my-work">My work</h2>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />created Webpage using HTML5 template</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />created blog using Jekyll</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Project documentation</li>
+</ul>
+
+<h2 id="references-">References :</h2>
+
+<p><a href="https://pages.github.com/">Github Pages</a> Introduction.</p>
+
+<p><a href="http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/">Jekyll Installation</a> Complete.</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+  </body>
+
+</html>

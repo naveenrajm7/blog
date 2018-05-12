@@ -6,16 +6,125 @@
 </description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 13 May 2018 01:35:48 +0530</pubDate>
-    <lastBuildDate>Sun, 13 May 2018 01:35:48 +0530</lastBuildDate>
+    <pubDate>Sun, 13 May 2018 02:40:34 +0530</pubDate>
+    <lastBuildDate>Sun, 13 May 2018 02:40:34 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
-        <title>A Clean Jekyll theme</title>
-        <description>&lt;p&gt;##Subheading
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. Cras sit amet porta quam. Donec eu gravida elit. Sed a diam eget sem lacinia maximus vel et elit. Nullam id egestas nulla. Duis dapibus at quam eu dapibus. Maecenas ullamcorper placerat eros, eu posuere enim bibendum eget. Phasellus mollis enim molestie tortor aliquam, nec auctor ligula &lt;code class=&quot;highlighter-rouge&quot;&gt;fringilla&lt;/code&gt;.&lt;/p&gt;
+        <title>I discovered Github pages</title>
+        <description>&lt;h2 id=&quot;thankgod-i-found-it-early&quot;&gt;ThankGod I found it early&lt;/h2&gt;
+&lt;p&gt;Why ThankGod  :pray: ? , well I was thinking to host my personal website and for that it required for me to
+pick a server, virtual host and backend program. I would have cost me atleast 3 days of work and also
+some money for host &amp;amp; domain  :disappointed: . But I was found this Github Pages and this is awesome :heart_eyes:&lt;/p&gt;
 
-&lt;p&gt;##Sample Code&lt;/p&gt;
+&lt;h2 id=&quot;advantages&quot;&gt;Advantages&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fast and free website&lt;/li&gt;
+  &lt;li&gt;Jekyll static webserver
+    &lt;ul&gt;
+      &lt;li&gt;easy blogging&lt;/li&gt;
+      &lt;li&gt;tons of jekyll templates just one fork away&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Platform to host documentation of all your project&lt;/li&gt;
+  &lt;li&gt;Show off your Resume on internet&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installing-jekyll&quot;&gt;Installing Jekyll&lt;/h2&gt;
+&lt;p&gt;Jekyll is a static site generator with a templating system that can be adapted for many types of websites, including blogs. It can be run on a server, or run locally and the generated files uploaded to a server. It is the default software used by Github Pages.&lt;/p&gt;
+
+&lt;p&gt;Tested with Jekyll 2.5.2 on Ubuntu 14.04 and 14.10&lt;/p&gt;
+&lt;h3 id=&quot;install-prerequisites&quot;&gt;Install Prerequisites&lt;/h3&gt;
+
+&lt;p&gt;Install ruby, the ruby development libraries, and the make command.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install ruby ruby-dev make gcc nodejs&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;javascript-workaround&quot;&gt;Javascript Workaround&lt;/h3&gt;
+
+&lt;p&gt;Installation of nodejs is required because of an issue where Jekyll requires a JavaScript runtime even if it will not be used.
+Install Jekyll&lt;/p&gt;
+
+&lt;p&gt;Install the Jekyll gem system wide. For speed, we are excluding the extended documentation. To include all documentation, omit the –no-rdoc –no-ri switches.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo gem install jekyll --no-rdoc --no-ri&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;start-jekyll&quot;&gt;Start Jekyll&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Check that Jekyll has been successfully installed.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll -v&lt;/code&gt;
+The current version is jekyll 2.5.2.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;recommended&quot;&gt;Recommended&lt;/h3&gt;
+
+&lt;p&gt;Additional gems can add features to Jekyll, such the github-pages gem which bundles together several gems supported by Github Pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo gem install github-pages --no-rdoc --no-ri&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Although not required, git is often used to manage the files of a Jekyll website.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install git&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;get-website-content&quot;&gt;Get Website Content&lt;/h3&gt;
+
+&lt;p&gt;Now that Jekyll is installed, we need content for it to serve. We can either use a current website, or set up a new site from scratch.
+Use Existing Site&lt;/p&gt;
+
+&lt;p&gt;Use git to clone an existing Jekyll website, such as this one!&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;git clone https://github.com/mchelen/michaelchelen.net.git
+cd michaelchelen.net&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Please note: the –config option must be specified to run michaelchelen.net locally. See Extra Options section below.&lt;/p&gt;
+&lt;h3 id=&quot;create-new-site&quot;&gt;Create New Site&lt;/h3&gt;
+
+&lt;p&gt;For a new Jekyll site, use the new command to create a directory structure and config files.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new my-awesome-site
+cd my-awesome-site&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;start-jekyll-1&quot;&gt;Start Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Now that the basic config and layout are available, start Jekyll to generate the website HTML and start a local server.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then visit http://localhost:4000 in a web browser.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is now successfully runnning!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;my-work&quot;&gt;My work&lt;/h2&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;created Webpage using HTML5 template&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;created blog using Jekyll&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Project documentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;references-&quot;&gt;References :&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; Introduction.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://michaelchelen.net/81fa/install-jekyll-2-ubuntu-14-04/&quot;&gt;Jekyll Installation&lt;/a&gt; Complete.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 May 2018 00:21:59 +0530</pubDate>
+        <link>http://localhost:4000/blog/github/pages/2018/05/13/I-discovered-github-pages.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/github/pages/2018/05/13/I-discovered-github-pages.html</guid>
+        
+        
+        <category>github</category>
+        
+        <category>pages</category>
+        
+      </item>
+    
+      <item>
+        <title>A Clean Jekyll theme</title>
+        <description>&lt;h2 id=&quot;subheading&quot;&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. Cras sit amet porta quam. Donec eu gravida elit. Sed a diam eget sem lacinia maximus vel et elit. Nullam id egestas nulla. Duis dapibus at quam eu dapibus. Maecenas ullamcorper placerat eros, eu posuere enim bibendum eget. Phasellus mollis enim molestie tortor aliquam, nec auctor ligula &lt;code class=&quot;highlighter-rouge&quot;&gt;fringilla&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;sample-code&quot;&gt;Sample Code&lt;/h2&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
 
@@ -32,7 +141,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. C
     &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:3000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;##List&lt;/p&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Do this&lt;/li&gt;
   &lt;li&gt;Do that&lt;/li&gt;
@@ -40,28 +149,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. C
   &lt;li&gt;Go to Sleep&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;##Links
-&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
-
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Sep 2015 00:21:59 +0530</pubDate>
         <link>http://localhost:4000/blog/jekyll/update/2015/09/27/clean-theme.html</link>
         <guid isPermaLink="true">http://localhost:4000/blog/jekyll/update/2015/09/27/clean-theme.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Hello</title>
-        <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
-</description>
-        <pubDate>Sat, 26 Sep 2015 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/blog/jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/jekyll/update/2015/09/26/hello.html</guid>
         
         
         <category>jekyll</category>
